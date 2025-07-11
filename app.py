@@ -7,7 +7,7 @@ model = joblib.load('svm_model.pkl')
 vectorizer = joblib.load('tfidf_vectorizer.pkl')
 
 
-st.title("Customer Review Sentiment Analyzer")
+st.title(" 🌀 Customer Review Sentiment Analyzer")
 user_input = st.text_area("Enter a customer review:")
 
 
