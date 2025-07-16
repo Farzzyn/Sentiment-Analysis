@@ -13,8 +13,8 @@ user_input = st.text_area("Enter a customer review:")
 
 if st.button("Analyze Sentiment"):
     if user_input.strip() != "":
-        vectorized_input = vectorizer.transform([user_input])
-        prediction = model.predict(vectorized_input)[0]
+        vector_input = vectorizer.transform([user_input])
+        prediction = model.predict(vector_input)[0]
 
         if prediction == 1:
             st.success("✅ Positive Review")
