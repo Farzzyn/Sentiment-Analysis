@@ -3,9 +3,11 @@ import streamlit as st
 import joblib
 
 # Load model and vectorizer
-model = joblib.load('svm_model.pkl')
 vectorizer = joblib.load('tfidf_vectorizer.pkl')
+model = joblib.load('svm_model.pkl')
 
+def preprocess(text):
+    return text.lower().strip()
 
 st.title(" 🌀 Customer Review Sentiment Analyzer")
 user_input = st.text_area("Enter a customer review:")
