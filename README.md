@@ -1,69 +1,136 @@
 # 🗣️ Customer Review Sentiment Analyzer
 
-A lightweight AI-powered customer review analyzer that classifies text reviews into **Positive**, **Neutral**, or **Negative** sentiment. Users can paste any review into a simple web interface and instantly receive a sentiment prediction powered by an NLP model trained on real customer feedback.
+<div align="center">
 
-**Mission:** Turn unstructured reviews into clear, actionable sentiment insights.
+![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat&logo=Streamlit&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=flat&logo=scikit-learn&logoColor=white)
+![License](https://img.shields.io/badge/license-MIT-green.svg)
 
-## Features
+A lightweight AI-powered customer review analyzer that classifies text reviews into **Positive**, **Neutral**, or **Negative** sentiment. Turn unstructured reviews into clear, actionable sentiment insights instantly!
 
-- **Automatic Sentiment Classification**: Uses Machine Learning (SVM/Logistic Regression) to categorize feedback.
-- **Text Preprocessing Pipeline**: Automatically cleans reviews (lowercase, removes punctuation and stopwords, tokenizes, and lemmatizes).
-- **TF-IDF Vectorization**: Converts text into machine learning features for fast and effective NLP.
-- **Simple Web Interface**: Powered by Streamlit, users can enter a review and instantly view the predicted sentiment.
+</div>
 
-## Tech Stack
+---
 
-- **Programming Language:** Python
-- **Data Processing:** pandas, numpy
-- **NLP Processing:** nltk
-- **Machine Learning:** scikit-learn
-- **Deployment:** Streamlit
+## 📑 Table of Contents
+- [About the Project](#-about-the-project)
+- [Key Features](#-key-features)
+- [Tech Stack](#-tech-stack)
+- [Getting Started](#-getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+- [Usage](#-usage)
+- [Project Structure](#-project-structure)
+- [Roadmap](#-roadmap)
+- [Contributing](#-contributing)
+- [License](#-license)
 
-## Getting Started
+---
+
+## 📖 About the Project
+
+Businesses receive thousands of customer reviews across platforms. Manually reading and understanding sentiment is slow and inconsistent. This NLP system solves that by automatically analyzing review sentiment and classifying feedback into Positive, Neutral, or Negative. 
+
+Targeted for data scientists, product managers, and small businesses looking to quickly understand customer perception.
+
+## ✨ Key Features
+
+- **Automated Sentiment Classification**: Categorizes user feedback instantly.
+- **Robust Text Preprocessing**: Automatically cleans text (lowercasing, punctuation/stopword removal, tokenization, lemmatization).
+- **TF-IDF Vectorization**: Transforms textual data into rich machine learning features.
+- **Multiple ML Models**: Support for evaluating Logistic Regression, Naive Bayes, SVM, and Random Forest.
+- **Interactive UI**: A simple and responsive web interface powered by Streamlit.
+
+## 🛠️ Tech Stack
+
+- **Language:** Python
+- **Data Manipulation:** `pandas`, `numpy`
+- **NLP & Processing:** `nltk`
+- **Machine Learning:** `scikit-learn`
+- **Web Framework:** `Streamlit`
+
+## 🚀 Getting Started
+
+Follow these instructions to get a copy of the project up and running on your local machine.
 
 ### Prerequisites
 
-Ensure you have Python installed. The required packages are listed in `requirements.txt`.
+You need to have Python installed on your system.
+* Python 3.8 or higher
 
 ### Installation
 
-1. Clone this repository:
+1. **Clone the repository**
    ```bash
    git clone https://github.com/Farzzyn/Sentiment-Analysis.git
    cd Sentiment-Analysis
    ```
 
-2. Install dependencies:
+2. **Create a virtual environment (optional but recommended)**
+   ```bash
+   python -m venv .venv
+   .venv\Scripts\activate   # On Windows
+   source .venv/bin/activate  # On macOS/Linux
+   ```
+
+3. **Install the dependencies**
    ```bash
    pip install -r requirements.txt
    ```
 
-### Running the App
+## 💻 Usage
 
-You can run the web application using the provided batch script or directly via Streamlit:
+You can run the application directly using Streamlit or by using the provided batch file (on Windows).
 
-**Using the batch script (Windows):**
+**Option 1: Using the batch script (Windows only)**
 ```bash
 run.bat
 ```
 
-**Using Streamlit directly:**
+**Option 2: Using Streamlit**
 ```bash
 streamlit run app.py
 ```
 
-The app will start on an accessible local URL, typically `http://localhost:8501`.
+Once running, open your browser and navigate to `http://localhost:8501`. Simply paste a customer review into the text area and click **"Predict Sentiment"** to see the results!
 
-## Project Structure
+## 📂 Project Structure
 
-- `app.py`: The Streamlit web application.
-- `sentiment_pipeline.py`: Contains data training, text preprocessing, and saved ML models generation.
-- `masterplan.md`: Details the project mission, roadmap, and design principles.
-- `dataset.csv` / `Mall_Customers.csv`: Datasets used for demonstration and model training.
+```text
+Sentiment-Analysis/
+├── app.py                   # Streamlit web application
+├── sentiment_pipeline.py    # Data loading, preprocessing, and model training
+├── masterplan.md            # Detailed project mission, roadmap, and design principles
+├── requirements.txt         # Project dependencies
+├── run.bat                  # Batch script to easily run the app on Windows
+├── dataset.csv              # Sample dataset for training/testing
+├── .gitignore               # Git ignore file
+└── README.md                # Project documentation
+```
 
-## Roadmap
+## 🗺️ Roadmap
 
-- **Phase 1**: MVP with EDA, basic text preprocessing, TF-IDF features, and ML model evaluation.
-- **Phase 2**: Model Optimization using hyperparameter tuning and cross-validation.
-- **Phase 3**: Deployment of the Streamlit app.
-- **Phase 4**: Future enhancements like real-time review analytics, API integration, and batch review tools.
+- [x] **Phase 1 (MVP):** Exploratory Data Analysis (EDA), basic text preprocessing, TF-IDF features, and ML model evaluation.
+- [ ] **Phase 2 (Optimization):** Improve accuracy via hyperparameter tuning and cross-validation.
+- [x] **Phase 3 (Deployment):** Deploy the model using a Streamlit web app.
+- [ ] **Phase 4 (Enhancements):** Real-time review analytics, API integration, and batch review tools.
+
+## 🤝 Contributing
+
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📝 License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+---
+<div align="center">
+  <p>Made with ❤️ by <a href="https://github.com/Farzzyn">Farzzyn</a></p>
+</div>
