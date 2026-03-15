@@ -1,0 +1,21 @@
+review_id,review_text,rating,sentiment_label
+1,"The product was amazing! I absolutely loved it and the delivery was so fast.",5,Positive
+2,"Quality is terrible. It broke after one use. Very disappointed.",1,Negative
+3,"It works okay, nothing very special about it. Just average.",3,Neutral
+4,"Excellent support team and a great product. Highly recommended!",5,Positive
+5,"Worst purchase ever. Complete waste of money and time.",1,Negative
+6,"Decent product for the price. Not the best but does the job.",3,Neutral
+7,"Fantastic! exceeded all my expectations. Will buy again.",5,Positive
+8,"Horrible experience. The item arrived damaged and late.",1,Negative
+9,"It's fine, I guess. Nothing to complain about, but won't buy again.",3,Neutral
+10,"Love this so much! Perfect for my needs and so easy to use.",5,Positive
+11,"Do not buy this. It is a scam.",1,Negative
+12,"Fairly standard quality. Exactly what you would expect.",3,Neutral
+13,"brilliant design and great functionality.",5,Positive
+14,"Too expensive for what it is. Quality is lacking.",2,Negative
+15,"It's alright. Serves its purpose.",3,Neutral
+16,"Incredible! Five stars all the way.",5,Positive
+17,"Poorly made and difficult to use. Avoid.",1,Negative
+18,"Average product. Might buy again if on sale.",3,Neutral
+19,"Absolutely stunning! The best thing I have bought this year.",5,Positive
+20,"Terrible customer service and bad product.",1,Negative
